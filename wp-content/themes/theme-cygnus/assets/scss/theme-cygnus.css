@@ -74,7 +74,7 @@ body {
       font-size: 20px !important; } }
 
 p {
-  margin-bottom: 1.625rem; }
+  margin-bottom: 20px; }
 
 h1 {
   font-family: "Exo", sans-serif;
@@ -205,23 +205,24 @@ ul, ol {
   transition: all 0.4s ease-in; }
   .enlace:hover {
     color: #F07D24;
-    border-color: #343E46; }
+    border-color: #343E46;
+    text-decoration: none; }
 
-#portfolio-carousel {
+.contenido-posts {
   padding-left: 0;
   border-left: 15px solid #F07D24;
   margin-bottom: 25px; }
   @media (max-width: 1199px) {
-    #portfolio-carousel .owl-stage-outer {
+    .contenido-posts .owl-stage-outer {
       width: 345px; } }
-  #portfolio-carousel .owl-dots {
+  .contenido-posts .owl-dots {
     position: absolute;
     bottom: 0;
     left: 30%; }
     @media (min-width: 1200px) {
-      #portfolio-carousel .owl-dots {
+      .contenido-posts .owl-dots {
         left: 40% !important; } }
-    #portfolio-carousel .owl-dots span {
+    .contenido-posts .owl-dots span {
       background: none repeat scroll 0 0 #dee2e6;
       border-radius: 50%;
       display: block;
@@ -229,23 +230,62 @@ ul, ol {
       margin: 5px;
       opacity: 1;
       width: 12px; }
-    #portfolio-carousel .owl-dots .active span {
+    .contenido-posts .owl-dots .active span {
       background: #F07D24; }
-  #portfolio-carousel .imagen-startup {
+  .contenido-posts .imagen-post {
     height: 380px;
     background-position: center;
     border-radius: 0 20px 20px 0;
     filter: grayscale(1); }
-  #portfolio-carousel .startup-title {
+  .contenido-posts .startup-title {
     position: absolute;
     bottom: 30px;
     margin-left: 15px; }
-    #portfolio-carousel .startup-title a {
+    .contenido-posts .startup-title a {
       color: #FFFFFF; }
-      #portfolio-carousel .startup-title a img {
+      .contenido-posts .startup-title a img {
         height: auto;
         width: 250px !important;
         filter: invert(1); }
+
+@media (max-width: 1199px) {
+  #partners-carousel .owl-item {
+    width: 250px !important; } }
+
+#partners-carousel .partner {
+  background: linear-gradient(180deg, #F9F9F9 51.04%, #EFF0F2 84.9%, #EFF0F2 100%);
+  border-radius: 20px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  width: 241px; }
+  @media (max-width: 1199px) {
+    #partners-carousel .partner {
+      width: 250.97px !important; } }
+  #partners-carousel .partner .foto {
+    width: 250.97px;
+    height: 233px;
+    background-size: cover;
+    background-position-y: -30px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    overflow: hidden; }
+  #partners-carousel .partner .nombre {
+    font-size: 18px;
+    font-weight: 600; }
+  #partners-carousel .partner .rol {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 0 13px; }
+  #partners-carousel .partner .red {
+    width: 32px !important;
+    height: 32px !important;
+    background: #212529 !important;
+    margin: 0 0 5px !important;
+    margin-right: 15px !important; }
+    #partners-carousel .partner .red a {
+      font-size: 18px !important;
+      color: #fff !important; }
 
 header {
   min-height: 90px;
@@ -334,6 +374,7 @@ header.fixed-top {
         padding-top: 14px;
         padding-bottom: 14px;
         border: none;
+        margin-bottom: 15px;
         border-radius: 6px; }
         #news .container .wpcf7 .wpcf7-email::placeholder {
           font-family: "Exo", sans-serif; }
@@ -744,9 +785,49 @@ footer {
       position: absolute;
       bottom: 20px; } }
 
-#companies {
-  margin: 35px 0;
-  padding: 100px 0; }
-  #companies .row {
+.section-post {
+  margin: 35px 0; }
+  @media (min-width: 1200px) {
+    .section-post {
+      padding: 100px 0 30px; } }
+  .section-post .row {
     margin-left: unset;
     margin-right: unset; }
+  @media (min-width: 1200px) {
+    .section-post .texto {
+      width: 560px; } }
+  .section-post .texto h2 {
+    margin-bottom: 20px; }
+  .section-post .texto p {
+    margin-bottom: 25px; }
+
+@media (max-width: 1199px) {
+  #blog-destacada .row {
+    flex-direction: column-reverse; } }
+
+#blog-destacada .contenido-posts {
+  padding-right: 0 !important;
+  border-right: 15px solid #F07D24;
+  border-left: unset !important;
+  padding-left: 15px !important; }
+  #blog-destacada .contenido-posts .imagen-post {
+    border-radius: 20px 0 0 20px !important;
+    filter: grayscale(0) !important; }
+
+#team {
+  padding: 30px 0; }
+  @media (min-width: 1200px) {
+    #team {
+      padding-bottom: 115px !important; } }
+  #team h2 {
+    margin-bottom: 60px;
+    text-align: center; }
+    @media (min-width: 1200px) {
+      #team h2 {
+        margin-bottom: 100px !important; } }
+  #team .enlace {
+    margin-bottom: 10px !important;
+    font-size: 18px !important;
+    margin: 10px 0 !important;
+    display: block;
+    width: 115px; }

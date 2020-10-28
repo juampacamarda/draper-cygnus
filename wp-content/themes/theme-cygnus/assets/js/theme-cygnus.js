@@ -62,7 +62,7 @@ jQuery(document).ready(function ($) {
   });
 
   jQuery(document).ready(function ($) { 
-    $('.owl-carousel').owlCarousel({
+    $('#portfolio').owlCarousel({
       autoplay:true,
       autoplayTimeout:7000,
       autoplayHoverPause:true,
@@ -76,6 +76,19 @@ jQuery(document).ready(function ($) {
           items: 1
         }
       }
+    });
+    $('#partners-carousel').owlCarousel({
+      loop:false,
+        margin:20,
+        nav:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            1000:{
+                items:5
+            }
+        }
     })
 
     });

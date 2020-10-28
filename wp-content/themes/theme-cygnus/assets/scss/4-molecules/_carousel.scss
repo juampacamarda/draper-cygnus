@@ -1,4 +1,4 @@
-#portfolio-carousel {
+.contenido-posts {
     padding-left: 0;
     border-left: 15px solid $naranja;
     margin-bottom:25px;
@@ -29,7 +29,7 @@
         }
       }
     }
-    .imagen-startup {
+    .imagen-post {
       height: 380px;
       background-position: center;
       border-radius: 0 20px 20px 0;
@@ -50,4 +50,52 @@
       }
     }
 
+}
+#partners-carousel{
+  .owl-item {
+    @include respond-below(lg){
+      width: 250px!important;
+    }
+  }
+  .partner {
+    background: linear-gradient(180deg, #F9F9F9 51.04%, #EFF0F2 84.9%, #EFF0F2 100%);
+    border-radius: 20px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 241px;
+    @include respond-below(lg){
+      width: 250.97px!important;
+    }
+    .foto {
+      width: 250.97px;
+      height: 233px;
+      background-size: cover;
+      background-position-y: -30px;
+      margin-bottom: 20px;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .nombre {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .rol{
+      font-size: 14px;
+      font-weight: 400;
+      margin: 10px 0 13px;
+    }
+    .red {
+      width: 32px!important;
+      height: 32px!important;
+      background: #212529!important;
+      margin: 0 0 5px!important;
+      margin-right: 15px!important;
+      a{
+        font-size: 18px!important;
+        color: #fff!important;
+      }
+    }
+
+  }
 }
