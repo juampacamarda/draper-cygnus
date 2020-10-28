@@ -1,0 +1,113 @@
+// Font Variables
+$regular:400;
+$medium: 500;
+$semi-bold: 600;
+$bold:700;
+
+// Source Code Font
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@500;600;700&family=Rubik&display=swap');
+
+
+
+@mixin titulos-medium{
+  font-family: $font-titulos;
+  font-weight: $medium;
+}
+
+@mixin titulos-semibold{
+  font-family: $font-titulos;
+  font-weight: $semi-bold;
+}
+@mixin titulos-bold{
+  font-family: $font-titulos;
+  font-weight: $bold;
+}
+@mixin textos-medium {
+  font-family: $font-textos;
+  font-weight: $regular;
+}
+
+
+body{
+  @include textos-medium;
+  font-size: 18px;
+  line-height: 160%;
+  /* or 29px */
+  letter-spacing: 0.04em;
+  @include respond-above(md) {
+    font-size: 20px!important;
+  }
+}
+
+p{
+  
+  margin-bottom:  1.625rem;
+ 
+}
+
+h1 {
+  @include titulos-bold;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  @include respond-above(md) {
+    font-size: 60px;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin-bottom:  4rem;
+  }
+}
+
+h2 {
+  @include titulos-semibold;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 120%;
+  /* or 55px */
+  letter-spacing: 0.02em;
+}
+h3{
+  @include titulos-semibold;
+  font-size: 30px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+}
+h4{
+  @include titulos-medium;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+a{
+  
+  text-decoration: none;
+}
+.underlined{
+  border-bottom: 3px solid;
+  display: inline;
+  padding-bottom: 1rem;
+}
+
+ul, ol{
+  margin: 0;
+  padding: 0;
+  li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 1rem;
+  }
+}
+
+
+
+

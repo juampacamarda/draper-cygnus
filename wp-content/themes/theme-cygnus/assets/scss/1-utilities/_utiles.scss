@@ -1,0 +1,6 @@
+.container{
+  @include respond-above(md){
+    width:100%!important;
+    max-width: 1400px;
+  }
+}

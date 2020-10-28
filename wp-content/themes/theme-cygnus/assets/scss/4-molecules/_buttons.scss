@@ -1,0 +1,76 @@
+.btn-goback{
+    background-color: unset;
+    border: none;
+    font-size: 28px;
+    display: block;
+    margin-left: auto;
+    margin-right: 35px;
+    margin-bottom: 15px;
+    transition: $transition;
+    color: $negro;
+    
+    @include respond-above(lg){
+      font-size: 48px!important;
+      margin-right: 22px!important;
+    }
+    &:hover{
+      color:$naranja
+    }
+}
+.vermas {
+    background: unset;
+    border: 3px solid;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: unset;
+    transition: $transition;
+}
+.btn-theme {
+    background: $naranja;
+    font-size: 17px;
+    font-family: $font-titulos;
+    color: $blanco;
+    font-weight: bold;
+    line-height: 23px;
+    padding: 14px 0;
+    text-align: center;
+    &:hover{
+      background-color: $negro;
+      color: $blanco;
+    }
+}
+.btn-scroll{
+  color:$blanco;
+  height: 34px;
+  width: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: $transition;
+  border: 2px solid;
+  border-radius: 8px;
+  margin: auto;
+  &:hover{
+    color: $naranja;
+  }
+}
+.enlace{
+  font-family: $font-titulos;
+  font-style: normal;
+  font-weight: bold;
+  color:$negro;
+  font-size: 22px;
+  line-height: 29px;
+  padding-bottom: 5px;
+  border-bottom: 4px solid $naranja;
+  text-decoration:none;
+  transition: $transition;
+  &:hover{
+    color:$naranja;
+    border-color: $negro;
+  }
+}

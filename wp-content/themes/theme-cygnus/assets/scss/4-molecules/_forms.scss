@@ -1,0 +1,82 @@
+#news{
+  min-height: 205px;
+  display: flex;
+  background: $gradiente-gris;
+  .container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h3{
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .wpcf7{
+      width: 100%;
+      .newsletter .row{
+        justify-content: center;
+      }
+      input{
+        width: 100%;
+      }
+      .wpcf7-email{
+        padding-left: 15px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        border: none;
+        border-radius: 6px;
+        &::placeholder {
+          font-family:$font-titulos;
+        }
+      }
+    }
+  }
+}
+#form-contactus{
+  select{
+    width: 30%;
+    height: 47px;
+    display: block;
+    margin-bottom: 15px;
+    background-color: $blanco;
+    
+  }
+  input{
+      margin-bottom: 14px;
+      width: 100%;
+      border-radius: 6px;
+      padding-left: 15px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      border: none;
+  }
+  textarea{
+    margin-bottom: 14px;
+    width: 100%;
+    border-radius: 6px;
+    padding-left: 15px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border: none;
+  }
+  .name-lastname{
+    @include respond-above(lg){
+      display: flex;
+      justify-content: space-between;
+      .name{
+        width: 98%!important;
+      }
+      .lastname{
+        width: 98%!important;
+      }
+    }
+  }
+  .btn-theme{
+    @include respond-above(lg){
+      width: 207px;
+      display: block;
+      margin-left: auto;
+      padding: 14px 30px;
+    }
+  }
+}

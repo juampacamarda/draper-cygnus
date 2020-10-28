@@ -1,0 +1,84 @@
+.portfolio-template-default{
+  #portfolio-header{
+    margin-bottom: 50px;
+    #info{
+      position:relative;
+      height: 100%;
+      padding: 0 25px;
+      background:$gradiente-gris;
+      overflow: hidden;
+      border-radius: 20px;
+      @include respond-below(lg){
+        margin-bottom: 15px;
+      }
+      
+      .logo{
+        margin-bottom: 117px;
+        @include respond-above(lg){
+          margin-bottom: 85px!important;
+        }
+      }
+      .frase{
+        &:after {
+          content: '';
+          display: block;
+          border-bottom: 10px solid;
+          position: absolute;
+          width: 220px;
+          right: 0;
+          bottom: 0;
+          @include respond-above(lg){
+            width: 220px!important;
+          }
+        }
+        @include respond-below(lg){
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .imagen{
+      height: 206.26px;
+      background: #F3F3F3;
+      border-radius: 10px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      overflow:hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      @include respond-above(lg){
+        height: 558px!important;
+        border-radius: 20px!important;
+      }
+      p{
+        display: block;
+        margin-top: auto;
+        color: #fff;
+        padding: 5px 8px;
+        background: rgba($negro, .5);
+        font-family: $font-titulos;
+        font-size: 9px;
+        margin-bottom: 0;
+        @include respond-above(lg){
+          font-size: 18px!important;
+          padding: 12px 5px!important;
+        }
+      }
+    }
+  }//fin info
+  #contenido{
+    margin-top: 40px;
+    padding-bottom: 25px;
+    .responsables{
+      @include respond-below(lg){
+        margin-bottom:30px
+      }
+    }
+    .bajada{
+      color:$naranja
+    }
+    
+  }
+  
+}

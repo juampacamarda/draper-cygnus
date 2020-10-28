@@ -1,0 +1,51 @@
+.homeportada{
+  color: $blanco;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  text-align:center;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position-x: -180px;
+  @include respond-above(lg){
+    background-position-x: center!important;
+  }
+  h3{
+    color:$naranja;
+    @include respond-below(lg){
+      margin-bottom: 25px;
+      font-size: 17px!important;
+    }
+    @include respond-above(lg){
+      margin-bottom: 35px;
+    }
+  }
+  h1{
+    @include respond-below(lg){
+      font-size:38px!important;
+      margin-bottom: 80px;
+    }
+    @include respond-above(lg){
+      display: block;
+      max-width: 975px;
+    }
+  }
+  .boton{
+    @include respond-above(lg){
+      position: absolute;
+      bottom: 20px;
+    }
+  }
+  
+}
+#companies{
+  margin: 35px 0;
+  padding: 100px 0;
+  .row{
+    margin-left: unset;
+    margin-right: unset;
+    
+  }
+}

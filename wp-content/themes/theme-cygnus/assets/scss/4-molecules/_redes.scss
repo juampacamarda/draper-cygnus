@@ -1,0 +1,24 @@
+.redes{
+  align-items: center;
+  justify-content: flex-end;
+  .tittle-redes{
+    color:$blanco
+  }
+  .red{
+    background: #fff;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 0 5px;
+    a{
+        color:$negro;
+        font-size: 32px;
+        :hover{
+            color: $naranja;
+        }
+    }
+  }
+}

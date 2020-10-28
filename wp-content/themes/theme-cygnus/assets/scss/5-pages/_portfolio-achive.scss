@@ -1,0 +1,92 @@
+.post-type-archive-portfolio{
+  .archive-header{
+    height: 413px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include respond-above(lg){
+      height: 490px!important;
+    }
+    .frase-archivo{
+      color:$blanco;
+      text-align: center;
+      display: block;
+      max-width: 1000px;
+    }
+  }
+  #startups-destacadas {
+    padding-bottom: 83px;
+    padding-top: 56px;
+    .startup {
+      height: 331px;
+      position: relative;
+      border-radius: 20px;
+      transition: all ease .6s;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      &:hover{
+        .imagen-startup{
+          filter: grayscale(0);
+        }
+        .vermas{
+          color:$naranja
+        }
+      }
+      .imagen-startup {
+        height: 243px;
+        background-position: center;
+        background-size: cover;
+        filter: grayscale(1);
+        transition: $transition;
+      }
+      .startup-title{
+        height: 89px;
+        background: linear-gradient(180deg, #F9F9F9 51.04%, #EFF0F2 84.9%, #EFF0F2 100%);
+        &:before {
+          content: '';
+          display: block;
+          width: 40%;
+          border-top: 7px solid $naranja;
+          position: absolute;top: 235px;
+          filter: unset!important;
+        }
+        a{
+          display: flex;
+          align-items: center;
+          height: 100%;
+          padding: 25px 30px;
+          justify-content: space-between;
+          color: $negro;
+          text-decoration: none;
+          img{
+            height: 37px;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+  #startups{
+    padding: 55px 0;
+    article{
+      .startup-title {
+        padding-bottom: 5px;
+        border-bottom: 2px solid;
+        a{
+          display: flex;
+          justify-content: space-between;
+          color: $negro;
+          &:hover{
+            color:$naranja;
+            .vermas{
+              color: $naranja
+            }
+          }
+        }
+      }
+    }
+  }
+}

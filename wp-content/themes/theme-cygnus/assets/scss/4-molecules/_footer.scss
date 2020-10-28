@@ -1,0 +1,32 @@
+footer{
+    padding: 50px 0 10px;
+    background-size: cover;
+    background-position: bottom;
+    .row {
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .copyright{
+        font-size: 15px;
+        line-height: 30px;
+        color:$blanco;
+        margin:0
+    }
+}
+.footer-form{
+    color:$blanco;
+    padding-top: 50px!important;
+    .top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    .bottom-movil{
+      margin-bottom: 50px;
+      .redes{
+       justify-content: center!important;
+      }
+    }
+   
+}
