@@ -272,11 +272,14 @@ ul, ol {
     overflow: hidden; }
   #partners-carousel .partner .nombre {
     font-size: 18px;
-    font-weight: 600; }
+    font-weight: 600;
+    padding: 0 10px; }
   #partners-carousel .partner .rol {
     font-size: 14px;
     font-weight: 400;
-    margin: 10px 0 13px; }
+    margin: 5px 10px 13px; }
+  #partners-carousel .partner .redes {
+    margin: 0 10px; }
   #partners-carousel .partner .red {
     width: 32px !important;
     height: 32px !important;
@@ -828,6 +831,6 @@ footer {
   #team .enlace {
     margin-bottom: 10px !important;
     font-size: 18px !important;
-    margin: 10px 0 !important;
+    margin: 10px !important;
     display: block;
     width: 115px; }
