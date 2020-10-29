@@ -19,7 +19,7 @@ Template Name: inicio-plantilla
     <?php get_template_part('assets/inc/home/companies-content');?>
   </section>
   <section id="blog-destacada" class="section-post">
-    <?php get_template_part('assets/inc/home/featured-content');?>
+    <?php get_template_part('assets/inc/home/featured-post');?>
   </section>
   <section id="team">
     <div class="container">
