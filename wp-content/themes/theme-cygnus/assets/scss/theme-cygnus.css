@@ -947,10 +947,11 @@ footer {
   background-repeat: no-repeat; }
   .contactbg footer {
     background-image: unset !important; }
-    .contactbg footer img {
-      display: none; }
-    .contactbg footer .redes {
-      display: none; }
+    @media (max-width: 1199px) {
+      .contactbg footer img {
+        display: none; }
+      .contactbg footer .redes {
+        display: none; } }
 
 #contact-page {
   padding: 100px 0 50px;

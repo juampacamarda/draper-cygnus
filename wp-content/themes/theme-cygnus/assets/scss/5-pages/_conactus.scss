@@ -3,12 +3,15 @@
   background-repeat: no-repeat;
   footer{
     background-image: unset!important;
-    img{
-      display: none;
+    @include respond-below(lg){
+      img{
+        display: none;
+      }
+      .redes{
+        display: none;
+      }
     }
-    .redes{
-      display: none;
-    }
+    
   }
   
 }
