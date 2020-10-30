@@ -1,0 +1,21 @@
+.contactbg{
+  background-size: cover;
+  background-repeat: no-repeat;
+  footer{
+    background-image: unset!important;
+    img{
+      display: none;
+    }
+    .redes{
+      display: none;
+    }
+  }
+  
+}
+#contact-page{
+  padding: 100px 0 50px;
+  @include respond-above(lg){
+    padding: 140px 0 260px!important;
+  }
+  color: $blanco;
+}

@@ -41,10 +41,13 @@
 }
 #form-contactus{
   select{
-    width: 185px;
+    @include respond-above(lg){
+      width: 185px!important;
+    }
+    width: 100%;
     height: 47px;
     display: block;
-    padding: 50x;
+    padding-left: 10px;
     margin-bottom: 15px;
     background-color: $blanco;
     -webkit-appearance: none;
@@ -60,11 +63,16 @@
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f107";
-    color:#f07d24;
-    position:absolute;
-    z-index:500;
-    bottom:0;
-    top:10px;left:165px;
+    color: #f07d24;
+    position: absolute;
+    z-index: 500;
+    bottom: 0;
+    top: 10px;
+    left: 310px;
+    float: right;
+    @include respond-above(lg){
+      left: 160px!important;
+    }
   }
   input{
       margin-bottom: 14px;
