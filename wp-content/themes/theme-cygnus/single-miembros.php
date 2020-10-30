@@ -2,7 +2,7 @@
 <main class="site-content">
   <section id="team">
     <div id="goback" class="d-flex justify-content-end">
-      <a class="btn-goback" href="<?php bloginfo('url'); ?>/#team">
+      <a class="btn-goback" href="<?php bloginfo('url'); ?>">
         <i class="far fa-times-circle"></i>
       </a>
     </div>
