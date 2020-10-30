@@ -27,6 +27,7 @@
       display: flex;
       flex-direction: column;
       overflow: hidden;
+      margin-bottom: 50px;
       &:hover{
         .imagen-startup{
           filter: grayscale(0);
@@ -71,7 +72,9 @@
   }
   #startups{
     padding: 55px 0;
+
     article{
+      margin-bottom: 50px;
       .startup-title {
         padding-bottom: 5px;
         border-bottom: 2px solid;

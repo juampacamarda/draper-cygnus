@@ -694,7 +694,8 @@ footer {
     transition: all ease .6s;
     display: flex;
     flex-direction: column;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-bottom: 50px; }
     .post-type-archive-portfolio #startups-destacadas .startup:hover .imagen-startup {
       filter: grayscale(0); }
     .post-type-archive-portfolio #startups-destacadas .startup:hover .vermas {
@@ -730,17 +731,19 @@ footer {
 
 .post-type-archive-portfolio #startups {
   padding: 55px 0; }
-  .post-type-archive-portfolio #startups article .startup-title {
-    padding-bottom: 5px;
-    border-bottom: 2px solid; }
-    .post-type-archive-portfolio #startups article .startup-title a {
-      display: flex;
-      justify-content: space-between;
-      color: #343E46; }
-      .post-type-archive-portfolio #startups article .startup-title a:hover {
-        color: #F07D24; }
-        .post-type-archive-portfolio #startups article .startup-title a:hover .vermas {
+  .post-type-archive-portfolio #startups article {
+    margin-bottom: 50px; }
+    .post-type-archive-portfolio #startups article .startup-title {
+      padding-bottom: 5px;
+      border-bottom: 2px solid; }
+      .post-type-archive-portfolio #startups article .startup-title a {
+        display: flex;
+        justify-content: space-between;
+        color: #343E46; }
+        .post-type-archive-portfolio #startups article .startup-title a:hover {
           color: #F07D24; }
+          .post-type-archive-portfolio #startups article .startup-title a:hover .vermas {
+            color: #F07D24; }
 
 @media (min-width: 1200px) {
   .single-miembros #team .row {
