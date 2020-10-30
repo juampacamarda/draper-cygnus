@@ -5,6 +5,15 @@
        justify-content: space-evenly; 
       }
     }
+    #goback{
+      @include respond-above(lg){
+        position: absolute;
+        right: 0;
+        .btn-goback{
+          font-size: 32px!important;
+        }
+      }
+    }
     .foto{
       position: relative;
       height: 360px;

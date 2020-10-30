@@ -10,7 +10,7 @@
 						<div class="col-12 col-md-4">
 						<?php if( have_rows('redes', 'option') ): ?>	
 							<ul class="nav redes">
-								<li class="tittle-redes">
+								<li class="tittle-redes d-none d-lg-block">
 									<h4>Follow us</h4>
 								</li>
 								<?php while( have_rows('redes', 'option') ): the_row(); ?>

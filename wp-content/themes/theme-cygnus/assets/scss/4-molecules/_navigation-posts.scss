@@ -4,10 +4,10 @@
     display: flex;
     align-items: center;
     svg{
-      font-size: 37px;
+      font-size: 28px;
       border: 2px solid;
-      width: 45px;
-      height: 45px;
+      width: 30px;
+      height: 30px;
       display: flex;
       border-radius: 50%;
       align-items: center;
@@ -17,11 +17,16 @@
       &:hover{
         color: $naranja;
       }
+      @include respond-above(lg){
+        font-size: 37px!important;
+        width: 45px!important;
+        height: 45px!important;
+      }
     }
     a{
       font-family: $font-titulos;
       font-weight: medium;
-      font-size: 25px;
+      font-size: 20px;
       line-height: 110%;
       color: $negro;
       padding-bottom: 5px;
@@ -33,6 +38,9 @@
         border-color: $naranja;
         padding-bottom:5px;
       }
+      @include respond-above(lg){
+         font-size: 25px!important;
+       }
     }
   }
   .prev-link:hover svg, .next-link:hover svg{
@@ -42,10 +50,10 @@
     display: flex;
     align-items: center;
     svg{
-      font-size: 37px;
+      font-size: 28px;
       border: 2px solid;
-      width: 45px;
-      height: 45px;
+      width: 30px;
+      height: 30px;
       display: flex;
       border-radius: 50%;
       align-items: center;
@@ -55,11 +63,16 @@
       &:hover{
         color: $naranja;
       }
+      @include respond-above(lg){
+        font-size: 37px!important;
+        width: 45px!important;
+        height: 45px!important;
+      }
     }
     a{
       font-family: $font-titulos;
       font-weight: medium;
-      font-size: 25px;
+      font-size: 20px;
       line-height: 110%;
       color: $negro;
       padding-bottom: 0px;
@@ -71,6 +84,9 @@
         border-color: $naranja;
         padding-bottom:5px;
       }
+       @include respond-above(lg){
+         font-size: 25px!important;
+       }
     }
   }
 }

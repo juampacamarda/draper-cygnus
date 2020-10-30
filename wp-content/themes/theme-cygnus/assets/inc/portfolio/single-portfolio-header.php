@@ -1,6 +1,6 @@
 <section id="portfolio-header">
     <div class="container">
-        <div class="d-flex justify-content-end">
+        <div id="goback" class="d-flex justify-content-end">
           <a class="btn-goback" href="<?php bloginfo('url'); ?>/portfolio">
             <i class="far fa-times-circle"></i>
           </a>
