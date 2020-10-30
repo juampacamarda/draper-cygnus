@@ -1,7 +1,9 @@
 .contenido-posts {
     padding-left: 0;
     border-left: 15px solid $naranja;
-    margin-bottom:25px;
+    @include respond-below(lg){
+      margin-bottom:25px;
+    }
     .owl-stage-outer {
       @include respond-below(lg){
         width: 345px;
@@ -30,7 +32,9 @@
       }
     }
     .imagen-post {
-      height: 380px;
+      height: 450px;
+      background-size: cover;
+      background-repeat: no-repeat;
       background-position: center;
       border-radius: 0 20px 20px 0;
       filter:grayscale(1)

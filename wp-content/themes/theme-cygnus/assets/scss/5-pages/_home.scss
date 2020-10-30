@@ -57,12 +57,15 @@
       margin-bottom:20px
     }
     p{
-      margin-bottom:25px
+      margin-bottom:25px;
+      font-size: 18px;
+      line-height: 160%;
+      letter-spacing: 0.04em;
     }
   }
 }
 
-#blog-destacada {
+.post-derecha {
   .row{
     @include respond-below(lg){
       flex-direction: column-reverse;
@@ -98,5 +101,49 @@
     margin: 10px!important;
     display: block;
     width: 115px;
+  }
+}
+#companies{
+  @include respond-below(lg){
+    padding: 38px 0;
+  }
+}
+#tim{
+  padding-bottom: 35px;
+  .contenido-posts{
+    .imagen-post {
+      background-size: cover;
+      padding: 10px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      .bajada-img {
+        margin-top: auto;
+      }
+    }
+  }
+  .texto{
+    .naranjatxt {
+      display: block;
+      width: 80%;
+      color: $naranja;
+      @include respond-below(lg){
+        margin-bottom: 25px;
+      }
+    }
+    .logos{
+      .nav{
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        li{
+          padding: unset!important;
+          @include respond-below(lg){
+            width: 97px;
+          }
+
+        }
+      }
+    }
   }
 }

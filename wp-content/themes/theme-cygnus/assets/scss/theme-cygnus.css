@@ -210,8 +210,10 @@ ul, ol {
 
 .contenido-posts {
   padding-left: 0;
-  border-left: 15px solid #F07D24;
-  margin-bottom: 25px; }
+  border-left: 15px solid #F07D24; }
+  @media (max-width: 1199px) {
+    .contenido-posts {
+      margin-bottom: 25px; } }
   @media (max-width: 1199px) {
     .contenido-posts .owl-stage-outer {
       width: 345px; } }
@@ -233,7 +235,9 @@ ul, ol {
     .contenido-posts .owl-dots .active span {
       background: #F07D24; }
   .contenido-posts .imagen-post {
-    height: 380px;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     border-radius: 0 20px 20px 0;
     filter: grayscale(1); }
@@ -358,6 +362,9 @@ header.fixed-top {
   min-height: 205px;
   display: flex;
   background: linear-gradient(180deg, #F9F9F9 51.04%, #EFF0F2 84.9%, #EFF0F2 100%); }
+  @media (max-width: 1199px) {
+    #news {
+      padding: 84px 0; } }
   #news .container {
     display: flex;
     justify-content: center;
@@ -372,6 +379,8 @@ header.fixed-top {
         justify-content: center; }
       #news .container .wpcf7 input {
         width: 100%; }
+        #news .container .wpcf7 input:focus {
+          outline-color: #f07d24; }
       #news .container .wpcf7 .wpcf7-email {
         padding-left: 15px;
         padding-top: 14px;
@@ -383,11 +392,30 @@ header.fixed-top {
           font-family: "Exo", sans-serif; }
 
 #form-contactus select {
-  width: 30%;
+  width: 185px;
   height: 47px;
   display: block;
+  padding: 50x;
   margin-bottom: 15px;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 10px; }
+  #form-contactus select:focus {
+    outline-color: #f07d24; }
+
+#form-contactus .Select:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+  color: #f07d24;
+  position: absolute;
+  z-index: 500;
+  bottom: 0;
+  top: 10px;
+  left: 165px; }
 
 #form-contactus input {
   margin-bottom: 14px;
@@ -397,6 +425,8 @@ header.fixed-top {
   padding-top: 14px;
   padding-bottom: 14px;
   border: none; }
+  #form-contactus input:focus {
+    outline-color: #f07d24; }
 
 #form-contactus textarea {
   margin-bottom: 14px;
@@ -406,6 +436,8 @@ header.fixed-top {
   padding-top: 14px;
   padding-bottom: 14px;
   border: none; }
+  #form-contactus textarea:focus {
+    outline-color: #f07d24; }
 
 @media (min-width: 1200px) {
   #form-contactus .name-lastname {
@@ -802,18 +834,21 @@ footer {
   .section-post .texto h2 {
     margin-bottom: 20px; }
   .section-post .texto p {
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0.04em; }
 
 @media (max-width: 1199px) {
-  #blog-destacada .row {
+  .post-derecha .row {
     flex-direction: column-reverse; } }
 
-#blog-destacada .contenido-posts {
+.post-derecha .contenido-posts {
   padding-right: 0 !important;
   border-right: 15px solid #F07D24;
   border-left: unset !important;
   padding-left: 15px !important; }
-  #blog-destacada .contenido-posts .imagen-post {
+  .post-derecha .contenido-posts .imagen-post {
     border-radius: 20px 0 0 20px !important;
     filter: grayscale(0) !important; }
 
@@ -834,3 +869,34 @@ footer {
     margin: 10px !important;
     display: block;
     width: 115px; }
+
+@media (max-width: 1199px) {
+  #companies {
+    padding: 38px 0; } }
+
+#tim {
+  padding-bottom: 35px; }
+  #tim .contenido-posts .imagen-post {
+    background-size: cover;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column; }
+    #tim .contenido-posts .imagen-post .bajada-img {
+      margin-top: auto; }
+  #tim .texto .naranjatxt {
+    display: block;
+    width: 80%;
+    color: #F07D24; }
+    @media (max-width: 1199px) {
+      #tim .texto .naranjatxt {
+        margin-bottom: 25px; } }
+  #tim .texto .logos .nav {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px; }
+    #tim .texto .logos .nav li {
+      padding: unset !important; }
+      @media (max-width: 1199px) {
+        #tim .texto .logos .nav li {
+          width: 97px; } }
