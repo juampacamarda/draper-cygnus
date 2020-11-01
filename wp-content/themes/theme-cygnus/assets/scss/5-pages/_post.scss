@@ -175,9 +175,13 @@ article{
 }
 #MenuBlog{
   margin: 30px 0;
+  #menu-blog-categories {
+    flex-direction: row;
+  }
   .btn-post {
     border-radius: 5px;
     padding: 13px 35px;
+    margin: 0 10px;
     a{
       color:$blanco;
       text-transform: uppercase;

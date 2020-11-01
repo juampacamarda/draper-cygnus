@@ -1108,9 +1108,12 @@ article {
 
 #MenuBlog {
   margin: 30px 0; }
+  #MenuBlog #menu-blog-categories {
+    flex-direction: row; }
   #MenuBlog .btn-post {
     border-radius: 5px;
-    padding: 13px 35px; }
+    padding: 13px 35px;
+    margin: 0 10px; }
     #MenuBlog .btn-post a {
       color: #FFFFFF;
       text-transform: uppercase;
