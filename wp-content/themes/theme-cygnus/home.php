@@ -4,7 +4,7 @@
     <!-- section portada-->
     <?php get_template_part('assets/inc/portfolio/archive-header');?>
     <!--menu dinamico-->
-    <?php if ( is_nav_menu( 'menu-blog' ) ) { ?>
+    <?php if ( has_nav_menu( 'menu-blog' ) ) { ?>
     <section id="blogmenu">
       <?php wp_nav_menu(array(
       'theme_location' => 'menu-blog',
