@@ -104,6 +104,11 @@
   }
 }
 #companies{
+  @include respond-above(lg){
+    #portfolio {
+      height: 450px;
+    }
+  }
   @include respond-below(lg){
     padding: 38px 0;
   }

@@ -59,19 +59,25 @@
       outline-color: #f07d24;
     }
   }
-  .Select:before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f107";
-    color: #f07d24;
-    position: absolute;
-    z-index: 500;
-    bottom: 0;
-    top: 10px;
-    left: 310px;
-    float: right;
-    @include respond-above(lg){
-      left: 160px!important;
+  .subject{
+    position: relative;
+    width: 100%;
+    &:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f107";
+      color: #f07d24;
+      position: absolute;
+      z-index: 500;
+      bottom: 0;
+      top: 10px;
+      margin-left: auto;
+      padding-right: 10px;
+      right: 0;
+      @include respond-above(lg){
+        left: 160px!important;
+        display: unset!important;
+      }
     }
   }
   input{

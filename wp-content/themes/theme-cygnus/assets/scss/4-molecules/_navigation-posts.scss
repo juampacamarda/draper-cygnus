@@ -89,4 +89,18 @@
        }
     }
   }
+  &.posts{
+    margin: 50px 0;
+    a{
+      display: flex;
+      align-items: center;
+      border:none;
+    }
+    .next-link {
+      float: right;
+    }
+    .prev-link {
+      float: left;
+    }
+  }
 }

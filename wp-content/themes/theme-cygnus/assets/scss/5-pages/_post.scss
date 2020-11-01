@@ -1,0 +1,239 @@
+.headerpost{
+  .autor {
+      color: #5C656D;
+  }
+
+  .bajada {
+    p {
+      color: $naranja;
+      margin: 30px 0;
+      @include respond-above(lg){
+        margin: 25px 0 40px!important;
+      }
+    }
+  }
+
+  .title {
+    margin-top: 30px;
+    @include respond-above(lg){
+      margin-top: 20px!important;
+    }
+  }
+
+}
+.contenido {
+  blockquote {
+    border-left: 4px solid $naranja;
+    padding: 20px 0px 20px 20px;
+    margin-bottom: 20px;
+    p{
+      font-family:$font-titulos;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 0;
+    }
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    border-radius: 20px;
+  }
+  .featured-image{
+    margin-bottom: 30px;
+  }
+}
+
+.foooterpost {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    padding: 10px 0;
+    .autor-share {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: space-between;
+      .autor{
+        a{
+          color:$naranja;
+        }
+      }
+    }
+    .redes{
+      .red{
+        background: $negro!important;
+        a{
+          color: $blanco!important;
+        }
+      }
+    }
+
+
+}
+.back-to-blog {
+    padding: 50px 0;
+    text-align: center;
+}
+
+article{
+  position:relative;
+   margin-bottom: 50px;
+   &.par{
+     @include respond-below(lg){
+       .row{
+         flex-direction: column-reverse;
+       }
+     }
+      @include respond-above(lg){
+      .data-post{
+          padding-right: 130px;
+        }
+      }
+   }
+   &.impar{
+     .data-post{
+        @include respond-above(lg){
+       padding-left: 130px;
+      }
+     }
+   }
+   .img-post {
+      @include respond-below(lg){
+        margin: 20px 0;
+      }
+    }
+  .ficha-thumbnail {
+      height: 300px;
+      border-radius: 20px;
+      overflow: hidden;
+      @include respond-above(lg){
+        height: 500px!important;
+      }
+      .hover{
+        width: 100%;
+        height: 100%;
+        a {
+          color: $blanco;
+          display: flex;
+          flex-direction: column;
+          background: rgba($naranja, .3);
+          width: 100%;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+          transition:all ease .5s;
+          opacity:0;
+          img {
+            width: 120px;
+            border-radius: 0px;
+            }
+        }
+        &:hover{
+          a{
+            opacity:1;
+            text-decoration:none
+          }
+        }
+      }
+  }
+  .data-post{
+    time{
+      font-family: $font-titulos;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 150%;
+    }
+    .post-categories{
+      li {
+        background: #EBECED;
+        border-radius: 5px;
+        padding: 5px 10px;
+        a {
+          font-family: $font-titulos;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 10px;
+          line-height: 150%;
+          display: block;
+          color: #858B91;
+        }
+      }
+    }
+    h3{
+      margin: 30px 0 25px;
+    }
+    p{
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+    .btn-theme {
+      padding:14px 40px
+    }
+  }
+}
+#MenuBlog{
+  margin: 30px 0;
+  .btn-post {
+    border-radius: 5px;
+    padding: 13px 35px;
+    a{
+      color:$blanco;
+      text-transform: uppercase;
+      font-family: $font-titulos;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 150%;
+      padding: 0;
+    }
+  }
+}
+#menumovile{
+  position:relative;
+  margin:30px 0;
+  #dropdownMenuButton {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: $blanco;
+    border:none;
+    box-shadow:0px 0px 2px #3e3e3e;
+    color: #3e3e3e;
+    
+  }
+  .dropdown-toggle{
+    &::after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f107";
+      color: #f07d24;
+      position: absolute;
+      z-index: 500;
+      bottom: 0;
+      top: 10px;
+      margin-left: auto;
+      right: 30px;
+      border: none;
+    }
+  }
+  .dropdown-menu{
+    padding: 10px;
+    width: 96%;
+    background: $negro;
+    #MenuBlog {
+      margin: 0;
+      .btn-post {
+        border-radius: 0;
+        padding: unset;
+        text-align:left
+        &:hover{
+          background-color: unset;
+        }
+
+      }
+    }
+
+  }
+  
+}

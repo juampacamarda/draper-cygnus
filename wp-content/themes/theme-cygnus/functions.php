@@ -23,7 +23,8 @@ function change_logo_class( $html ) {
 //nav menu and thumbnails
 if (function_exists('register_nav_menus')){
 	register_nav_menus (array('superior'=>'Menu Principal Superior'));
-	register_nav_menus (array('footer-a'=>'Menu footer a'));
+	register_nav_menus (array('menu-blog'=>'Menu Categorias Blog'));
+	register_nav_menus (array('menu-blog-responsive'=>'Menu Categorias Mobile'));
 	register_nav_menus (array('footer-b'=>'Menu footer b'));
 
 }
@@ -98,7 +99,7 @@ function my_acf_op_init() {
 }
 // Show posts of 'post', 'page' and 'libro' post types on home page
 function add_my_post_types_to_query( $query ) {
-  if ( (is_single() || is_home() || is_category() ) && $query->is_main_query() )
+  if ( (is_single() || is_category() ) && $query->is_main_query() )
     $query->set( 'post_type', array( 'post', 'page', 'portfolio', 'miembros' ) );
   	return $query;
 	}
@@ -227,3 +228,57 @@ function miembros_post_type() {
 
 }
 add_action( 'init', 'miembros_post_type', 0 );
+
+
+//formato Fecha
+function my_post_time_ago_function() {
+return sprintf( esc_html__( '%s ago', 'textdomain' ), human_time_diff(get_the_time ( 'U' ), current_time( 'timestamp' ) ) );
+}
+add_filter( 'get_the_date', 'my_post_time_ago_function' );
+
+//share social buttons
+// Function to handle the thumbnail request
+function get_the_post_thumbnail_src($img)
+{
+  return (preg_match('~\bsrc="([^"]++)"~', $img, $matches)) ? $matches[1] : '';
+}
+function share_buttons($content) {
+    global $post;
+    if(is_singular() || is_home()){
+    
+        // Get current page URL 
+        $sb_url = urlencode(get_permalink());
+				$credit = get_bloginfo ( 'name' );
+        // Get current page title
+        $sb_title = str_replace( ' ', '%20', get_the_title());
+        
+        // Get Post Thumbnail for pinterest
+        $sb_thumb = get_the_post_thumbnail_src(get_the_post_thumbnail());
+ 
+        // Construct sharing URL without using any script
+        $twitterURL = 'https://twitter.com/intent/tweet?text='.$sb_title.'&amp;url='.$sb_url.'&nbsp; by &nbsp;'.$credit;
+        $linkedInURL = 'https://www.linkedin.com/shareArticle?mini=true&url='.$sb_url.'&amp;title='.$sb_title;
+        $facebookURL = 'https://www.facebook.com/sharer/sharer.php?u='.$sb_url;
+
+ 
+        // Add sharing button at the end of page/page content
+        $content .= '<div class="social-box"><ul class="nav redes">';
+        $content .= '<li class="red"><a  href="'. $twitterURL .'" target="_blank" rel="nofollow"><span><i class="fab fa-twitter"></i></span></a></li>';
+				$content .= '<li class="red"><a  href="'.$linkedInURL.'" target="_blank" rel="nofollow"><span><i class="fab fa-linkedin"></i></span></a></li>';
+        $content .= '<li class="red"><a  href="'.$facebookURL.'" target="_blank" rel="nofollow"><span><i class="fab fa-facebook-f"></i></span></a></li>';
+        $content .= '</ul></div>';
+        
+        return $content;
+    }else{
+        // if not a post/page then don't include sharing button
+        return $content;
+    }
+};
+// Enable the_content if you want to automatically show social buttons below your post.
+
+ 
+
+// This will create a wordpress shortcode [social].
+// Please it in any widget and social buttons appear their.
+// You will need to enabled shortcode execution in widgets.
+add_shortcode('social','share_buttons');

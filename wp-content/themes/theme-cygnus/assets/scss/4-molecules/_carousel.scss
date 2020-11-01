@@ -4,11 +4,11 @@
     @include respond-below(lg){
       margin-bottom:25px;
     }
-    .owl-stage-outer {
+    /*.owl-stage-outer {
       @include respond-below(lg){
         width: 345px;
       }
-    }
+    }*/
     .owl-dots{
       position:absolute;
       bottom:0;
@@ -31,6 +31,11 @@
         }
       }
     }
+    article{
+      a{
+        color:$blanco;
+      }
+    }
     .imagen-post {
       height: 450px;
       background-size: cover;
@@ -41,19 +46,13 @@
     }
     .startup-title{
       position:absolute;
-      bottom:30px;
+      bottom:0px;
       margin-left:15px;
-      a{
-        color:$blanco;
-        img {
-          height:auto;
-          width:250px!important;
-          filter:invert(1);
-
-        }
+      img {
+        height:10%!important;
+        width:auto;
       }
     }
-
 }
 #partners-carousel{
   .owl-item {

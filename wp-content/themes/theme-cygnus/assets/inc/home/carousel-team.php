@@ -6,13 +6,15 @@ if ( $query->have_posts() ) { ?>
   <?php while ( $query->have_posts() ) : $query->the_post(); ?>
   
     <article class="partner">
-      <?php if ( get_field( 'foto_integrante' ) ) : ?>
-        <div class="foto" style="background-image:url(<?php the_field( 'foto_integrante' ); ?>)">
-        </div>
-      <?php else: ?>
-        <div class="foto" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/img/default-cygnus.png' )">
-        </div>
-      <?php endif ?>
+      <a href="<?php the_permalink(); ?>">
+        <?php if ( get_field( 'foto_integrante' ) ) : ?>
+          <div class="foto" style="background-image:url(<?php the_field( 'foto_integrante' ); ?>)">
+          </div>
+        <?php else: ?>
+          <div class="foto" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/img/default-cygnus.png' )">
+          </div>
+        <?php endif ?>
+      </a>
       <div class="datos">
         <h3 class="nombre d-none d-lg-block"><?php the_field( 'nombre' ); ?></h3>
         <h3 class="rol d-none d-lg-block"><?php the_field( 'rol' ); ?></h3>

@@ -1,21 +1,5 @@
 .post-type-archive-portfolio{
-  .archive-header{
-    height: 413px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    @include respond-above(lg){
-      height: 490px!important;
-    }
-    .frase-archivo{
-      color:$blanco;
-      text-align: center;
-      display: block;
-      max-width: 1000px;
-    }
-  }
+  
   #startups-destacadas {
     padding-bottom: 83px;
     padding-top: 56px;
@@ -91,5 +75,22 @@
         }
       }
     }
+  }
+}
+.archive-header{
+  height: 413px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include respond-above(lg){
+    height: 490px!important;
+  }
+  .frase-archivo{
+    color:$blanco;
+    text-align: center;
+    display: block;
+    max-width: 1000px;
   }
 }
