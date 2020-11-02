@@ -15,8 +15,9 @@ if ( $query->have_posts() ) { ?>
               <?php else: ?>
               <div class="imagen-startup" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/img/default-cygnus.png' )">
               </div>
-              </a>
+              
               <?php endif; ?>
+              </a>
               <div class="startup-title">
                 <a href="<?php the_permalink(); ?>">
                   <?php if ( get_field( 'logo' ) ) : ?>
