@@ -953,7 +953,9 @@ footer {
 
 @media (max-width: 1199px) {
   #companies {
-    padding: 38px 0; } }
+    padding: 38px 0; }
+    #companies article {
+      margin-bottom: 0px; } }
 
 #tim {
   padding-bottom: 35px; }

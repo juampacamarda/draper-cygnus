@@ -111,6 +111,9 @@
   }
   @include respond-below(lg){
     padding: 38px 0;
+    article{
+      margin-bottom: 0px;
+    }
   }
 }
 #tim{
