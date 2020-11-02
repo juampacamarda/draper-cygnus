@@ -1,5 +1,5 @@
 <?php 
-$args = array('post_type' => 'miembros','posts_per_page' => 5,'orderby' => 'menu_order','order'=>'DESC');
+$args = array('post_type' => 'miembros','posts_per_page' => 5,'orderby' => 'menu_order','order'=>'ASC');
 $query = new WP_query ( $args );
 if ( $query->have_posts() ) { ?>
   <div id="partners-carousel" class="owl-carousel">
