@@ -8,12 +8,14 @@ if ( $query->have_posts() ) { ?>
         <?php while ( $query->have_posts() ) : $query->the_post(); ?>
         <div class="col-12 col-lg-4">
             <article <?php post_class('startup'); ?>>
+              <a href="<?php the_permalink(); ?>">
               <?php if ( get_field( 'imagen-portada' ) ) : ?>
               <div class="imagen-startup" <?php post_class('startup'); ?> style="background-image:url('<?php the_field( 'imagen-portada' ); ?>')">
               </div>
               <?php else: ?>
               <div class="imagen-startup" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/img/default-cygnus.png' )">
               </div>
+              </a>
               <?php endif; ?>
               <div class="startup-title">
                 <a href="<?php the_permalink(); ?>">
