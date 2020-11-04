@@ -78,18 +78,19 @@ jQuery(document).ready(function ($) {
       }
     });
     $('#partners-carousel').owlCarousel({
-        autoplay:true,
-        autoplayTimeout:10000,
-        autoplayHoverPause:true,
         loop: true,
         margin:20,
         nav:false,
         responsive:{
             0:{
-                items:1
+                items:1,
+                autoplay:true,
+                autoplayTimeout:10000,
+                autoplayHoverPause:true,
             },
             1000:{
-                items:5
+                items:5,
+                autoplay:false,
             }
         }
     })
