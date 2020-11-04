@@ -253,8 +253,10 @@ button:focus {
       width: 12px; }
     .contenido-posts .owl-dots .active span {
       background: #F07D24; }
-  .contenido-posts article a {
-    color: #FFFFFF; }
+  .contenido-posts article {
+    margin-left: -3px; }
+    .contenido-posts article a {
+      color: #FFFFFF; }
   .contenido-posts .imagen-post {
     height: 450px;
     background-size: cover;
