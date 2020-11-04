@@ -20,6 +20,17 @@
           color:$naranja
         }
       }
+      @include respond-below(lg){
+        height: 270px!important;
+        .imagen-startup{
+          height: 200px!important;
+        }
+        .startup-title{
+          &:before {
+            top: 194px!important;
+          }
+        }
+      }
       .imagen-startup {
         height: 243px;
         background-position: center;
@@ -51,8 +62,12 @@
             width: auto;
             mix-blend-mode: difference;
             height: auto;
-            max-height: 60px;
-            max-width: 187px;
+            max-height: 45px;
+            max-width: 135px;
+            @include respond-above(lg){
+              max-height: 60px!important;
+              max-width: 187px!important;
+            }
           }
         }
       }

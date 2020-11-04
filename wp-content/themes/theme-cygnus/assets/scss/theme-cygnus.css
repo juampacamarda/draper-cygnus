@@ -650,7 +650,7 @@ footer {
       .portfolio-template-default #portfolio-header #info {
         margin-bottom: 15px; } }
     .portfolio-template-default #portfolio-header #info .logo {
-      margin-bottom: 117px; }
+      margin-bottom: 70px; }
       .portfolio-template-default #portfolio-header #info .logo img {
         mix-blend-mode: difference;
         min-height: 47px;
@@ -684,9 +684,11 @@ footer {
     overflow: hidden;
     position: relative;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: 35px; }
     @media (min-width: 1200px) {
       .portfolio-template-default #portfolio-header .imagen {
+        margin-top: unset !important;
         height: 558px !important;
         border-radius: 20px !important; } }
     .portfolio-template-default #portfolio-header .imagen p {
@@ -697,11 +699,13 @@ footer {
       background: rgba(52, 62, 70, 0.5);
       font-family: "Exo", sans-serif;
       font-size: 9px;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      line-height: 120%; }
       @media (min-width: 1200px) {
         .portfolio-template-default #portfolio-header .imagen p {
           font-size: 18px !important;
-          padding: 12px 5px !important; } }
+          padding: 12px 5px !important;
+          line-height: unset !important; } }
 
 .portfolio-template-default #contenido {
   margin-top: 40px;
@@ -728,6 +732,13 @@ footer {
       filter: grayscale(0); }
     .post-type-archive-portfolio #startups-destacadas .startup:hover .vermas {
       color: #F07D24; }
+    @media (max-width: 1199px) {
+      .post-type-archive-portfolio #startups-destacadas .startup {
+        height: 270px !important; }
+        .post-type-archive-portfolio #startups-destacadas .startup .imagen-startup {
+          height: 200px !important; }
+        .post-type-archive-portfolio #startups-destacadas .startup .startup-title:before {
+          top: 194px !important; } }
     .post-type-archive-portfolio #startups-destacadas .startup .imagen-startup {
       height: 243px;
       background-position: center;
@@ -758,8 +769,12 @@ footer {
           width: auto;
           mix-blend-mode: difference;
           height: auto;
-          max-height: 60px;
-          max-width: 187px; }
+          max-height: 45px;
+          max-width: 135px; }
+          @media (min-width: 1200px) {
+            .post-type-archive-portfolio #startups-destacadas .startup .startup-title a img {
+              max-height: 60px !important;
+              max-width: 187px !important; } }
 
 .post-type-archive-portfolio #startups {
   padding: 55px 0; }
