@@ -4,7 +4,10 @@
       <h2 class="d-none d-lg-block"><?php the_field( 'titulo_entrada_destacada' ); ?></h2>
       <h3 class="d-block d-lg-none"><?php the_field( 'titulo_entrada_destacada' ); ?></h3>
       <p><?php the_field( 'texto_entrada_destacada' ); ?></p>
-      <a href="<?php the_field( 'texto_entrada_destacada' ); ?>" class="enlace">Read our thesis</a>
+      <?php $enlace = get_field( 'enlace' ); ?>
+      <?php if ( $enlace ) : ?>
+      <a href="<?php echo esc_url( $enlace) ; ?>" class="enlace">Read our thesis</a>
+      <?php endif; ?>
     </div>
   </div>
   <div class="contenido-posts col-12 col-md-6"> 
