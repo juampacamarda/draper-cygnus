@@ -70,13 +70,11 @@ function theme_scripts(){
 }
 add_action('wp_enqueue_scripts','theme_scripts');
 //subir svg
-function custom_mimes( $mimes = array() ) {
-	// New allowed mime types.
-    $mimes['svg'] = 'image/svg+xml';
-    $mimes['svgz'] = 'image/svg+xml';
-    return $mimes;
+function cc_mime_types($mimes) {
+ $mimes['svg'] = 'image/svg+xml';
+ return $mimes;
 }
-add_filter( 'upload_mimes', 'custom_mimes' );
+add_filter('upload_mimes', 'cc_mime_types');
 //fin subir svg
 
 //option pages
