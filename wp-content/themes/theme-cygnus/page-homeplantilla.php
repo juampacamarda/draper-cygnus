@@ -46,7 +46,7 @@ Template Name: inicio-plantilla
             </ul>
           <?php endif; ?>
           </div>
-          <a href="<?php the_field( 'enlace-tim' ); ?>" class="enlace">an unparalleled legacy</a>
+          <a href="<?php the_field( 'enlace' ); ?>" class="enlace">an unparalleled legacy</a>
         </div>
       </div>
       <div class="contenido-posts col-12 col-md-6"> 
