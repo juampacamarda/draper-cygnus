@@ -1,7 +1,7 @@
 <div class="row d-flex justify-content-center">
   <div class="col-12 col-md-6">
     <div class="top">
-      <h2>Contac Us</h2>
+      <h2>Contact Us</h2>
       <?php if( have_rows('redes', 'option') ): ?>	
         <ul class="nav redes d-none d-lg-flex">
           <?php while( have_rows('redes', 'option') ): the_row(); ?>

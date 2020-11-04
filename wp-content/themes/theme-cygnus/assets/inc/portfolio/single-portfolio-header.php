@@ -11,7 +11,7 @@
                 <div id="info" class="d-lg-flex flex-lg-column justify-content-lg-center">
                   <div class="logo">
                   <?php if ( get_field( 'logo' ) ) : ?>
-                      <img src="<?php the_field( 'logo' ); ?>" />
+                      <img src="<?php the_field( 'logo' ); ?>" class="d-block" />
                   <?php else: ?>
                       <h2><?php the_title(); ?></h2>
                   <?php endif ?>

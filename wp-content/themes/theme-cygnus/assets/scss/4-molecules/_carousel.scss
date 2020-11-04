@@ -46,7 +46,7 @@
     }
     .startup-title{
       position:absolute;
-      bottom:0px;
+      bottom:20px;
       margin-left:15px;
       img {
         height:10%!important;
@@ -59,6 +59,9 @@
     @include respond-below(lg){
       width: 250px!important;
     }
+  }
+  .owl-stage-outer {
+    padding-left: 10px;
   }
   .partner {
     background: linear-gradient(180deg, #F9F9F9 51.04%, #EFF0F2 84.9%, #EFF0F2 100%);
