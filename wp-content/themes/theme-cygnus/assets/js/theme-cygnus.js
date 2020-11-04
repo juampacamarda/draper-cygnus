@@ -67,7 +67,7 @@ jQuery(document).ready(function ($) {
       autoplayTimeout:10000,
       autoplayHoverPause:true,
       loop: true,
-      margin: 10,
+      margin: 0,
       //nav: true,
       animateOut: 'fadeOut',
       animateIn: 'slideInLeft',
