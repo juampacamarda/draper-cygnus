@@ -67,7 +67,7 @@ jQuery(document).ready(function ($) {
       autoplayTimeout:10000,
       autoplayHoverPause:true,
       loop: true,
-      margin: 0,
+      margin: 10,
       //nav: true,
       animateOut: 'fadeOut',
       animateIn: 'slideInLeft',
@@ -78,6 +78,7 @@ jQuery(document).ready(function ($) {
       }
     });
     $('#partners-carousel').owlCarousel({
+
         margin:20,
         nav:false,
         responsive:{
