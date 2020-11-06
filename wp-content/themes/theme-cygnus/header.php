@@ -36,9 +36,9 @@
                         if (!has_custom_logo()) {
                             ?>
                         <a href="<?php bloginfo('url'); ?>">
-                        <h1><?php echo get_bloginfo( 'name' ); ?></h1> </a>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo," class="img-fluid"/>
+                        </a>
                     <?php  }else{?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" class="img-fluid"/>
                     <?php } ?>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
