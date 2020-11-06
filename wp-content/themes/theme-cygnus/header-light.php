@@ -9,7 +9,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
-
+        <?php if ( get_field( 'codigo_cookies', 'option' ) ) { ?>
+            <?php the_field('codigo_cookies', 'option'); ?>
+        <?php } ?>
+        <?php if ( get_field( 'fb_pixel', 'option' ) ) { ?>
+            <?php the_field('fb_pixel', 'option'); ?>
+        <?php } ?>
+        <?php if ( get_field( 'google_analytics', 'option' ) ) { ?>
+            <?php the_field('google_analytics', 'option'); ?>
+        <?php } ?>
 		<?php wp_head(); ?>
 		
 
@@ -23,6 +31,10 @@
                     <?php if( get_field('footer_logo', 'option') ): ?>
                         <a href="<?php bloginfo('url'); ?>" <a href="<?php bloginfo('url'); ?>" class="home-link-light d-block">
                             <img src="<?php the_field('footer_logo', 'option'); ?>" class="img-fluid"/>
+                        </a>
+                    <?php else: ?>
+                        <a href="<?php bloginfo('url'); ?>" <a href="<?php bloginfo('url'); ?>" class="home-link-light d-block">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-blanco.png" class="img-fluid"/>
                         </a>
                     <?php endif; ?>
                       <a href="<?php bloginfo('url'); ?>" <a href="<?php bloginfo('url'); ?>" class="home-link-fix d-none">

@@ -20,7 +20,7 @@
               </div><!--fin imgdestacada-->
               <div class="data-post col-12 col-md-7">
                 <?php the_category(); ?>
-                <time datatime="<?php the_time('Y-m-j'); ?>"><?php the_time('d/m/Y'); ?></time>
+                <time datatime="<?php the_time('Y-m-j'); ?>"><?php the_date('d/m/Y'); ?></time>
                 <h3><?php the_title(); ?></h3>
                 <p><?php the_excerpt(); ?></p>
                 <a href="<?php the_permalink(); ?>" class="btn btn-theme">See more</a>
@@ -32,7 +32,7 @@
             <div class="row">
               <div class="data-post col-12 col-md-7">
                 <?php the_category(); ?>
-                <time datatime="<?php the_time('Y-m-j'); ?>"><?php the_time('d/m/Y'); ?></time>
+                <time datatime="<?php the_time('Y-m-j'); ?>"><?php the_date('d/m/Y'); ?></time>
                 <h3><?php the_title(); ?></h3>
                 <p><?php the_excerpt(); ?></p>
                 <a href="<?php the_permalink(); ?>" class="btn btn-theme">See more</a>

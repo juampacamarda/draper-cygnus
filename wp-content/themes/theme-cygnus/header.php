@@ -9,7 +9,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
-
+        <?php if ( get_field( 'codigo_cookies', 'option' ) ) { ?>
+            <?php the_field('codigo_cookies', 'option'); ?>
+        <?php } ?>
+        <?php if ( get_field( 'fb_pixel', 'option' ) ) { ?>
+            <?php the_field('fb_pixel', 'option'); ?>
+        <?php } ?>
+        <?php if ( get_field( 'google_analytics', 'option' ) ) { ?>
+            <?php the_field('google_analytics', 'option'); ?>
+        <?php } ?>
 		<?php wp_head(); ?>
 		
 
@@ -29,7 +37,9 @@
                             ?>
                         <a href="<?php bloginfo('url'); ?>">
                         <h1><?php echo get_bloginfo( 'name' ); ?></h1> </a>
-                    <?php  }?>
+                    <?php  }else{?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" class="img-fluid"/>
+                    <?php } ?>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">

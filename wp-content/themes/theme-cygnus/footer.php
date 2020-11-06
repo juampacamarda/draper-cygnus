@@ -4,8 +4,10 @@
 					<div class="row d-flex">
 						<div class="col-12 col-md-2">
 							<?php if( get_field('footer_logo', 'option') ): ?>
-								<img src="<?php the_field('footer_logo', 'option'); ?>" />
-							<?php endif; ?>
+								<img src="<?php the_field('footer_logo', 'option'); ?>" class="img-fluid"/>
+							<?php else: ?>
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-blanco.png" class="img-fluid"/>
+							<?php endif;?>
 						</div>
 						<div class="col-12 col-md-4">
 						<?php if( have_rows('redes', 'option') ): ?>	

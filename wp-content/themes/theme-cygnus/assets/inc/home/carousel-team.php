@@ -7,7 +7,10 @@ if ( $query->have_posts() ) { ?>
   
     <article class="partner">
       <a href="<?php the_permalink(); ?>">
-        <?php if ( get_field( 'foto_integrante' ) ) : ?>
+        <?php if ( get_field( 'foto_integrante_home' ) ) : ?>
+          <div class="foto" style="background-image:url(<?php the_field( 'foto_integrante_home' ); ?>)">
+          </div>
+        <?php elseif( get_field( 'foto_integrante' ) ) : ?>
           <div class="foto" style="background-image:url(<?php the_field( 'foto_integrante' ); ?>)">
           </div>
         <?php else: ?>
