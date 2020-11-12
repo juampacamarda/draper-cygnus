@@ -649,6 +649,20 @@ footer {
     @media (max-width: 1199px) {
       .portfolio-template-default #portfolio-header #info {
         margin-bottom: 15px; } }
+    .portfolio-template-default #portfolio-header #info .exitlogo {
+      height: 90px;
+      width: 63px;
+      background: #000;
+      border-radius: 0px 0 10px 10px;
+      padding: 18px 10px 5px;
+      position: absolute;
+      top: 0;
+      right: 25px; }
+      @media (max-width: 1199px) {
+        .portfolio-template-default #portfolio-header #info .exitlogo {
+          height: 68px !important;
+          width: 50px !important;
+          right: 16px !important; } }
     .portfolio-template-default #portfolio-header #info .logo {
       margin-bottom: 70px; }
       .portfolio-template-default #portfolio-header #info .logo img {

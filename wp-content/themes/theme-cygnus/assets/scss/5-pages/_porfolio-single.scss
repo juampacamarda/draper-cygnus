@@ -11,7 +11,21 @@
       @include respond-below(lg){
         margin-bottom: 15px;
       }
-      
+      .exitlogo {
+        height: 90px;
+        width: 63px;
+        background: #000;
+        border-radius: 0px 0 10px 10px;
+        padding: 18px 10px 5px;
+        position: absolute;
+        top: 0;
+        right: 25px;
+        @include respond-below(lg){
+          height: 68px!important;
+          width: 50px!important;
+          right: 16px!important;
+        }
+      }
       .logo{
         img {
           mix-blend-mode: difference;

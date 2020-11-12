@@ -9,6 +9,11 @@
         <div class="row">
             <div class="col-12 col-md-4 ">
                 <div id="info" class="d-lg-flex flex-lg-column justify-content-lg-center">
+                    <?php if ( get_field( 'exit-logo' ) == 1 ) : ?>
+                        <div class="exitlogo">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exit-icon-lightldpi.svg" alt="" class="img-fluid d-block mx-auto">
+                        </div>
+                    <?php endif; ?>
                   <div class="logo">
                   <?php if ( get_field( 'logo' ) ) : ?>
                       <img src="<?php the_field( 'logo' ); ?>" class="d-block" />
