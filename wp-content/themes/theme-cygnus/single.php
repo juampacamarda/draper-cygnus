@@ -19,7 +19,7 @@
                   <?php the_excerpt(); ?>
                 </div>
                 <!--contenido-->
-                <div class="contenido">
+                <div class="contenido elementos-post">
                   <?php the_content(); ?>
                   	<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
                       <div class="featured-image">

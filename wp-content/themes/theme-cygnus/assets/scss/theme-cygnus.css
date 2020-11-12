@@ -1045,18 +1045,18 @@ footer {
     .headerpost .title {
       margin-top: 20px !important; } }
 
-.contenido li {
+.elementos-post li {
   list-style: disc;
   display: list-item; }
 
-.contenido ul {
+.elementos-post ul {
   padding-left: 25px; }
 
-.contenido ol {
+.elementos-post ol {
   list-style-type: decimal;
   margin: 0;
   padding-left: 25px; }
-  .contenido ol li {
+  .elementos-post ol li {
     list-style: decimal; }
 
 .contenido blockquote {

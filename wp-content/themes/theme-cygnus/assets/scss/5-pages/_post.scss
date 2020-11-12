@@ -21,7 +21,7 @@
   }
 
 }
-.contenido {
+.elementos-post{
   li{
     list-style: disc;
     display: list-item;
@@ -37,6 +37,9 @@
       list-style: decimal;
     }
   }
+}
+.contenido {
+  
   blockquote {
     border-left: 4px solid $naranja;
     padding: 20px 0px 20px 20px;
