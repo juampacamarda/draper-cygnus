@@ -648,7 +648,8 @@ footer {
     border-radius: 20px; }
     @media (max-width: 1199px) {
       .portfolio-template-default #portfolio-header #info {
-        margin-bottom: 15px; } }
+        margin-bottom: 15px;
+        padding-top: 75px; } }
     .portfolio-template-default #portfolio-header #info .exitlogo {
       height: 90px;
       width: 63px;

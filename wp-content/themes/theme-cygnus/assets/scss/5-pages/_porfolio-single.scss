@@ -10,6 +10,7 @@
       border-radius: 20px;
       @include respond-below(lg){
         margin-bottom: 15px;
+        padding-top: 75px;
       }
       .exitlogo {
         height: 90px;
