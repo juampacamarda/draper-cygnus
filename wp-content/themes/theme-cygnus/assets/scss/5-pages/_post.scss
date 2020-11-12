@@ -22,6 +22,21 @@
 
 }
 .contenido {
+  li{
+    list-style: disc;
+    display: list-item;
+  }
+  ul{
+    padding-left: 25px;
+  }
+  ol{
+    list-style-type: decimal;
+    margin: 0;
+    padding-left: 25px;
+    li {
+      list-style: decimal;
+    }
+  }
   blockquote {
     border-left: 4px solid $naranja;
     padding: 20px 0px 20px 20px;
