@@ -1,5 +1,5 @@
 <?php 
-$args = array('post_type' => 'portfolio','posts_per_page' => 9,'orderby' => 'menu_order','order'=>'ASC');
+$args = array('post_type' => 'portfolio','posts_per_page' => 4,'category_name' =>'home' ,'orderby' => 'menu_order','order'=>'ASC');
 $query = new WP_query ( $args );
 if ( $query->have_posts() ) { ?>
   <div id="portfolio" class="owl-carousel">

@@ -280,3 +280,15 @@ function share_buttons($content) {
 // Please it in any widget and social buttons appear their.
 // You will need to enabled shortcode execution in widgets.
 add_shortcode('social','share_buttons');
+
+add_filter( 'body_class', function( $classes ) {
+    if ( is_single() ) {
+        global $post;
+
+        foreach( ( get_the_category( $post->ID ) ) as $category ) {
+            $classes[] = 'category-' . $category->slug;
+        }
+    }
+
+    return $classes;
+} );

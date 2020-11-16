@@ -30,15 +30,15 @@
                 <div class="navbar-brand">
                     <?php if( get_field('footer_logo', 'option') ): ?>
                         <a href="<?php bloginfo('url'); ?>" <a href="<?php bloginfo('url'); ?>" class="home-link-light d-block">
-                            <img src="<?php the_field('footer_logo', 'option'); ?>" class="img-fluid"/>
+                            <img src="<?php the_field('footer_logo', 'option'); ?>" class="img-fluid" height="90" width="160"/>
                         </a>
                     <?php else: ?>
                         <a href="<?php bloginfo('url'); ?>" <a href="<?php bloginfo('url'); ?>" class="home-link-light d-block">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-blanco.png" class="img-fluid"/>
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-blanco.svg" height="90" width="160" class="img-fluid"/>
                         </a>
                     <?php endif; ?>
                       <a href="<?php bloginfo('url'); ?>" <a href="<?php bloginfo('url'); ?>" class="home-link-fix d-none">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" class="img-fluid"/>
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" height="90" width="160" class="img-fluid"/>
                       </a>
                       
                 </div>

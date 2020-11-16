@@ -4,9 +4,9 @@
 					<div class="row d-flex">
 						<div class="col-12 col-md-2">
 							<?php if( get_field('footer_logo', 'option') ): ?>
-								<img src="<?php the_field('footer_logo', 'option'); ?>" class="img-fluid"/>
+								<img src="<?php the_field('footer_logo', 'option'); ?>" class="img-fluid" height="90" width="159"/>
 							<?php else: ?>
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-blanco.png" class="img-fluid"/>
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-blanco.svg" height="90" width="159" class="img-fluid"/>
 							<?php endif;?>
 						</div>
 						<div class="col-12 col-md-4">
@@ -17,7 +17,7 @@
 								</li>
 								<?php while( have_rows('redes', 'option') ): the_row(); ?>
 								<li class="red">
-									<a href="<?php the_sub_field('link'); ?>">
+									<a href="<?php the_sub_field('link'); ?>" target="_blank">
 										<?php the_sub_field('icon'); ?>
 									</a>
 								</li>
