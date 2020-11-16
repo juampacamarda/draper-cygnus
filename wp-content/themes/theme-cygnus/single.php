@@ -33,7 +33,7 @@
                     <?php the_date('F j, Y'); ?>
                   </time>
                   <div class="autor-share">
-                    <div class="autor">
+                    <div class="autor d-none">
                       <h3><?php the_author_posts_link() ?></h3>
                     </div>
                     <div class="social">
