@@ -6,7 +6,7 @@
         <ul class="nav redes d-none d-lg-flex">
           <?php while( have_rows('redes', 'option') ): the_row(); ?>
           <li class="red">
-            <a href="<?php the_sub_field('link'); ?>">
+            <a href="<?php the_sub_field('link'); ?>" target="_blank">
               <?php the_sub_field('icon'); ?>
             </a>
           </li>
