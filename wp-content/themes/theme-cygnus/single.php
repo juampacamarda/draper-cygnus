@@ -15,7 +15,7 @@
                   <h2 class="d-none d-lg-block"><?php the_title(); ?></h2>
                   <h3 class="d-block d-lg-none"><?php the_title(); ?></h3>
                 </div>
-                <div class="bajada">
+                <div class="bajada d-none">
                   <?php the_excerpt(); ?>
                 </div>
                 <!--contenido-->
