@@ -12,7 +12,7 @@
               <a href="<?php the_field( 'enlace' ); ?>" target="_blank">
                 <span class="mr-auto"><?php the_title(); ?></span>
                 <?php if ( get_field( 'exit-logo' ) == 1 ) : ?>
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exit-link.svg" alt="" class="img-fluid">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exit-link.svg" alt="" class="mr-2 img-fluid">
                 <?php endif; ?>
                 <button class="vermas">
                   <i class="fa fa-angle-right"></i>
