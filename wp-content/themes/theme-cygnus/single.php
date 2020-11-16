@@ -8,7 +8,7 @@
         <div class="row d-flex justify-content-center">
             <div class="col-12 col-lg-6">
               <div class="headerpost">
-                <div class="autor">
+                <div class="autor d-none">
                   <?php the_author(); ?>
                 </div>
                 <div class="title">
