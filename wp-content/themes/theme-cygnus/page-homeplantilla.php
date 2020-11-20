@@ -39,14 +39,14 @@ Template Name: inicio-plantilla
             <ul class="nav">
             <?php while( have_rows('logos') ): the_row(); ?>
             <li>
-              <a href="<?php the_sub_field('enlace-tim'); ?>">
+              <a href="<?php the_sub_field('enlace'); ?>">
                <img src="<?php the_sub_field('logo'); ?>" class="img-fluid d-block" alt=""></a>
             </li>
             <?php endwhile; ?>
             </ul>
           <?php endif; ?>
           </div>
-          <a href="<?php the_field( 'enlace' ); ?>" class="enlace">an unparalleled legacy</a>
+          <a href="<?php the_field( 'enlace-tim' ); ?>" class="enlace">an unparalleled legacy</a>
         </div>
       </div>
       <div class="contenido-posts col-12 col-md-6"> 
