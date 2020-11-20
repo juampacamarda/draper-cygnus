@@ -39,7 +39,7 @@ Template Name: inicio-plantilla
             <ul class="nav">
             <?php while( have_rows('logos') ): the_row(); ?>
             <li>
-              <a href="<?php the_sub_field('enlace'); ?>">
+              <a href="<?php the_sub_field('enlace-tim'); ?>">
                <img src="<?php the_sub_field('logo'); ?>" class="img-fluid d-block" alt=""></a>
             </li>
             <?php endwhile; ?>

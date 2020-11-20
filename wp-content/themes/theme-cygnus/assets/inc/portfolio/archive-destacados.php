@@ -10,13 +10,17 @@ if ( $query->have_posts() ) { ?>
             <article <?php post_class('startup'); ?>>
               <a href="<?php the_permalink(); ?>">
               <?php if ( get_field( 'imagen-portada' ) ) : ?>
-              <div class="imagen-startup" <?php post_class('startup'); ?> style="background-image:url('<?php the_field( 'imagen-portada' ); ?>')">
+              <div class="imagen-startup" <?php post_class('startup'); ?> style="background-image:url('<?php the_field( 'imagen-portada' ); ?>');position:relative">
+                <?php if ( get_field( 'exit-logo' ) == 1 ) : ?>
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exit-link.svg" alt="" class="mr-2 exit-feat img-fluid">
+                <?php endif; ?>
               </div>
               <?php else: ?>
               <div class="imagen-startup" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/img/default-cygnus.png' )">
               </div>
               
               <?php endif; ?>
+              
               </a>
               <div class="startup-title">
                 <a href="<?php the_permalink(); ?>">

@@ -56,11 +56,11 @@
     }
 }
 #partners-carousel{
-  .owl-item {
+  /*.owl-item {
     @include respond-below(lg){
       width: 250px!important;
     }
-  }
+  }*/
   .owl-stage-outer {
     padding-left: 5px;
   }
@@ -73,6 +73,7 @@
     width: 241px;
     @include respond-below(lg){
       width: 250.97px!important;
+      margin: auto;
     }
     .foto {
       width: 100%;
