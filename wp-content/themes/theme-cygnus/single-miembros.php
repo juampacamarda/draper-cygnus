@@ -28,7 +28,7 @@
               <ul class="nav">
                 <?php while( have_rows('redes') ): the_row(); ?>
                 <li class="red">
-                  <a href="<?php the_sub_field('link_a_red_social'); ?>">
+                  <a href="<?php the_sub_field('link_a_red_social'); ?>"  target="_blank">
                     <?php the_sub_field('icono_de_red_social'); ?>
                   </a>
                 </li>
