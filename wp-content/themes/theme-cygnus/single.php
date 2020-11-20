@@ -50,7 +50,7 @@
       <?php else : ?>
       <?php endif; ?>
       <div class="back-to-blog">
-        <a href="" class="btn btn-theme btn-post"> < Back to Blog</a>
+        <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="btn btn-theme btn-post"> < Back to Blog</a>
       </div>
       <?php get_template_part('assets/inc/news');?>
 
